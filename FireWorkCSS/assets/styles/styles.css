@@ -6,12 +6,35 @@
 }
 
 @font-face {
-  
   font-family: "Comfortaa";
   src: url("../fonts/static/Comfortaa-Light.ttf");
 }
-
-
+.masthead {
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 15rem;
+	padding: 15rem 0;
+	background: url("../img/campfire.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+  }
+.masthead1{
+	width: 100%;
+  	padding-right: var(--bs-gutter-x, 0.75rem);
+  	padding-left: var(--bs-gutter-x, 0.75rem);
+  	margin-right: auto;
+  	margin-left: auto;
+	padding-right: 1.5rem !important;
+  	padding-left: 1.5rem !important;
+	display: flex !important;
+	height: 100% !important;
+	align-items: flex-start !important;
+	justify-content: center !important;
+	text-align: center !important;
+}
 .textPrincipal{
 	color: var(--principal);
 }
@@ -26,29 +49,27 @@
 
 header{
 	width: 100vw;
-	padding: 3vh;
 	text-align: center;
-	box-shadow: 0 7px 15px;
-    background-color: bisque;
+	background-color: var(--terciario);
+	padding: 0;
+	width: 100%;
 }
 nav ul{
 	display: inline-block;
-
-	
 }
 nav ul a{
-	padding: 5vh;
+	padding: 1vh 2vh;
 	text-decoration: none;
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 3vh;
 	border-radius: 3px;
-	transition: background-color 1s, color 0.5s;
+	color: white;
+	font-family: "Comfortaa";
+	/*transition: background-color 1s, color 0.5s;*/
 }
 nav ul a:hover{
-/* 	background-color: gray;
-	color: white; */
+	color: var(--secundario);
     box-shadow: 0 7px 15px;
-
 }
 main{
 	display: flex;
@@ -99,9 +120,16 @@ footer p{
 	font-size: 150%;
 }
 .titulo{
-    text-align: left;
-    font-size: 150%;
+    font-size: 300%;
+	font-family: "Comfortaa";
 }
-p{
-	color: aqua;
+.circulo{
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	/*padding: 10px;*/
+	background: white;
+	border: 3px solid white;
+	color: white;
+	text-align: center;
 }
