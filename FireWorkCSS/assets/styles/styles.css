@@ -113,11 +113,12 @@ footer{
 	padding: 5vh;
 	text-align: center;
     box-shadow: 0 7px 15px;
-    background-color: bisque;
+    background-color: var(--terciario);
 }
 footer p{
-	font-style: oblique;
-	font-size: 150%;
+	font-size: 300%;
+
+	font-family: "Comfortaa";
 }
 .titulo{
     font-size: 300%;
