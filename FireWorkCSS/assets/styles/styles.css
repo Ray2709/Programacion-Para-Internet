@@ -67,8 +67,8 @@ nav ul a{
 	/*transition: background-color 1s, color 0.5s;*/
 }
 nav ul a:hover{
-	color: var(--secundario);
-    box-shadow: 0 7px 15px;
+	color: #EE6325;
+    /*box-shadow: 0 7px 15px;*/
 }
 main{
 	font-family: "Comfortaa";
@@ -125,13 +125,11 @@ footer p{
     font-size: 300%;
 	font-family: "Comfortaa";
 }
-
 .circulo{
 	border-radius: 70%;
 	width: 70px;
 	height: 70px;
 }
-
 .subtitulo{
 	font-family: "Comfortaa";
 	font-size: 300%;
@@ -140,7 +138,7 @@ footer p{
 
 .subtitulo2{
 	font-family: "Comfortaa";
-	font-size: 300%;
+	font-size: 200%;
 	width: 100%;
 }
 .animacionTyping{
@@ -167,6 +165,7 @@ footer p{
 	border: 3px solid white;
 	color: white;
 	text-align: center;
+	top: 50cm;
 }
 @keyframes typing {
 	from { width: 0 }
@@ -176,14 +175,16 @@ footer p{
 	from, to { border-color: transparent }
 	50% { border-color: var(--secundario); }
 }
-#navbar {
-	overflow: hidden;
+.navbar {
+	padding-top: 0.8%;
 	background-color: var(--terciario);
+	overflow: hidden;
   }
   /* Navbar links */
-#navbar a {
+.navbar a {
 	float: left;
 	display: block;
+	font-size: 16px !important;
 	color: white;
 	text-align: center;
 	padding: 14px;
@@ -192,12 +193,14 @@ footer p{
 .content {
 	padding: 16px;
   }
+  .column {
+	float: left;
+	width: 33.33%;
+  }
   
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-.sticky + .content {
-	padding-top: 60px;
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
   }
