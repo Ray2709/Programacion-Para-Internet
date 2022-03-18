@@ -6,22 +6,34 @@
 }
 
 @font-face {
-  font-family: "Comfortaa";
+  font-family: "ComfortaaLight";
   src: url("../fonts/static/Comfortaa-Light.ttf");
 }
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/static/Comfortaa-SemiBold.ttf");
+}
+body{
+	margin: 0;
+	font-family: Comfortaa;
+}
+a{
+	color: inherit; /* blue colors for links too */
+  	text-decoration: inherit; /* no underline */
+}
 .masthead {
+	background-color: var(--terciario);
 	position: relative;
 	width: 100%;
 	height: auto;
 	padding: 15rem 0;
-	background: url("../img/campfire.png");
+	background: url("../img/equis.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
   }
 .masthead1{
-	width: 100%;
   	padding-right: var(--bs-gutter-x, 0.75rem);
   	padding-left: var(--bs-gutter-x, 0.75rem);
   	margin-right: auto;
@@ -54,7 +66,8 @@ header{
 	width: 100%;
 }
 nav ul{
-	display: inline-block;
+	margin-block-start: 3.5vh;
+	/*display: inline-block;*/
 }
 nav ul a{
 	padding: 1vh 2vh;
@@ -62,12 +75,12 @@ nav ul a{
 	font-weight: bolder;
 	font-size: 5vh;
 	border-radius: 3px;
-	color: white;
+	/*color: white;*/
 	font-family: "Comfortaa";
 	/*transition: background-color 1s, color 0.5s;*/
 }
 nav ul a:hover{
-	color: #EE6325;
+	color: var(--terciario);
     /*box-shadow: 0 7px 15px;*/
 }
 main{
@@ -110,15 +123,16 @@ article p{
     background-color: var(--terciario);
 }
 footer{
-	width: 100%;
+	color: #fff;
 	padding: 5vh;
 	text-align: center;
     box-shadow: 0 7px 15px;
     background-color: var(--terciario);
 }
 footer p{
-	font-size: 300%;
-
+	margin-block-start: 0;
+    margin-block-end: 0;
+	font-size: 30px;
 	font-family: "Comfortaa";
 }
 .titulo{
@@ -162,10 +176,12 @@ footer p{
 	height: 75px;
 	/*padding: 10px;*/
 	background: white;
-	border: 3px solid white;
+	border: 3px solid var(--terciario);
 	color: white;
 	text-align: center;
 	top: 50cm;
+	border-right-style: dashed;
+}
 }
 @keyframes typing {
 	from { width: 0 }
@@ -176,16 +192,15 @@ footer p{
 	50% { border-color: var(--secundario); }
 }
 .navbar {
-	padding-top: 0.8%;
-	background-color: var(--terciario);
+	/*background-color: var(--terciario);*/
 	overflow: hidden;
   }
   /* Navbar links */
 .navbar a {
 	float: left;
 	display: block;
-	font-size: 16px !important;
-	color: white;
+	font-size: 18px !important;
+	/*color: white;*/
 	text-align: center;
 	padding: 14px;
 	text-decoration: none;
@@ -193,10 +208,115 @@ footer p{
 .content {
 	padding: 16px;
   }
-  .column {
+
+.column1 {
 	float: left;
-	width: 33.33%;
-  }
+	width: 6.25%;
+	
+	
+}
+
+.column2 {
+	float: left;
+	width: 12.5%;
+	
+	
+}
+.column3 {
+	float: left;
+	width: 18.75%;
+	
+	
+}
+.column4 {
+	float: left;
+	width: 25%;
+	
+	
+}
+.column5 {
+	float: left;
+	width: 31.25%;
+	
+	
+}
+.column6 {
+	float: left;
+	width: 37.5%;
+	
+	
+}
+.column7 {
+	float: left;
+	width: 43.75%;
+	
+	
+}
+.column8 {
+	float: left;
+	width: 50%;
+	
+	
+}
+.column9 {
+	float: left;
+	width: 56.25%;
+	
+	
+}
+.column10 {
+	float: left;
+	width: 62.5%;
+	
+	
+}
+.column11 {
+	float: left;
+	width: 68.75%;
+	
+	
+}
+.column12 {
+	float: left;
+	width: 75%;
+	
+	
+}
+.column13 {
+	float: left;
+	width: 81.25%;
+	
+	
+}
+.column14 {
+	float: left;
+	width: 87.5%;
+	
+	
+}
+.column15 {
+	float: left;
+	width: 93.75%;
+	
+	
+}
+.column16 {
+	float: left;
+	width: 100%;
+	
+	
+}
+
+.al-r{
+	text-align: right;
+	margin-top: 1vh;
+	margin-bottom: 1.5vh;
+}
+.al-l{
+	text-align: left;
+	margin-top: 1vh;
+	margin-bottom: 1.5vh;
+}
   
   /* Clear floats after the columns */
   .row:after {
@@ -204,3 +324,18 @@ footer p{
 	display: table;
 	clear: both;
   }
+
+ .contact{
+ 	background: rgb(238,99,37);
+	background: linear-gradient(90deg, rgba(238,99,37,1) 0%, rgba(250,150,28,1) 100%);
+ }
+
+.menu{
+	z-index: 100;
+}
+
+.fixed {
+    position:fixed;
+    top:0;
+    width: 100%;
+}
