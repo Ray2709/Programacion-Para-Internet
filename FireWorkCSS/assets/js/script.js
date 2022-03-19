@@ -1,3 +1,6 @@
+$(window).on('load', function() {
+    $('#page-loader').fadeOut(500);
+});
 var num = 50;
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
