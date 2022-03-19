@@ -6,3 +6,20 @@ $(window).bind('scroll', function () {
         $('.menu').removeClass('fixed');
     }
 });
+
+function myFunction() {
+    if($('#navBarMov').is(":visible")){
+        $('#navBarMov').hide();
+    }else{
+        $('#navBarMov').show();
+    }
+  /*var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }*/
+}
+
+/*var navBarMov = $('#myTopnav').html();
+$('#navBarMov').html('<ul>'+navBarMov+'</ul>');*/
