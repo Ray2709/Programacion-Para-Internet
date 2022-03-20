@@ -116,7 +116,7 @@ a{
 	}
 }
 .masthead {
-	background-color: var(--terciario);
+	background-color: var(--principal);
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -126,13 +126,13 @@ a{
   	padding-left: var(--bs-gutter-x, 0.75rem);
   	margin-right: auto;
   	margin-left: auto;
-	padding-right: 1.5rem !important;
+	  padding-right: 1.5rem !important;
   	padding-left: 1.5rem !important;
-	display: flex !important;
-	height: 100% !important;
-	align-items: flex-start !important;
-	justify-content: center !important;
-	text-align: center !important;
+	  display: flex !important;
+	  height: 100% !important;
+	  align-items: flex-start !important;
+	  justify-content: center !important;
+	  text-align: center !important;
 }
 .textPrincipal{
 	color: var(--principal);
