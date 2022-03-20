@@ -7,7 +7,7 @@
 	--textosLight: #3C3C3C;
 }
 [tema="light"]{
-	--fondo: black;
+	--fondo: #3C3C3C;
 	--letra: white;
 }
 @font-face {
@@ -41,6 +41,13 @@ a{
     float: right;
     display: block;
   }
+
+
+  #switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
   nav.contact{
   	display: none;
   }
@@ -61,10 +68,10 @@ a{
   	margin-block-start: 1vh !important;
   }
   .container{
-  	width: auto !important;
+  	width: 100% !important;
   	margin: 0 !important;
   	padding: 0 !important;
-	color: var(--letra);
+		color: var(--letra);
   }
   h1.textPrincipal{
   	font-size: 45px !important;
@@ -113,13 +120,7 @@ a{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 15rem 0;
-	background: url("../img/equis.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
-  }
+ }
 .masthead1{
   	padding-right: var(--bs-gutter-x, 0.75rem);
   	padding-left: var(--bs-gutter-x, 0.75rem);
@@ -218,14 +219,15 @@ footer{
 	color: #fff;
 	padding: 15px;
 	text-align: center;
-    box-shadow: 0 7px 15px;
-    background-color: var(--terciario);
-    background: url("../img/equis.jpg") !important;
-    background-size: cover  !important;
-    background-position: center !important;
+  box-shadow: 0 7px 15px;
+  background-color: var(--terciario);
+  background: url("../img/equis.jpg") !important;
+  background-size: cover  !important;
+  background-position: center !important;
 
 }
 footer p{
+	color: #fff;
 	margin-block-start: 0;
     margin-block-end: 0;
 	font-size: 30px;
@@ -234,6 +236,7 @@ footer p{
 footer a:hover{
 	-webkit-text-fill-color: var(--secundario);
 }
+
 .enlacesRapidos{
 	border-bottom: 1px dashed;
 
@@ -609,12 +612,15 @@ z-index: 99999;
 .NS{
 	text-align: center;
 }
+
 #switch {
+
     position: fixed;
-	bottom: 2px;
-	right: 2px;
+		bottom: 20px;
+		right: 20px;
     width: 60px;
     height: 34px;
+    z-index: 999;
   }
   
   #switch input { 
@@ -859,3 +865,8 @@ z-index: 99999;
 	background: linear-gradient(45deg, greenyellow, dodgerblue);
   }
   
+  a > i{
+  	color: #fff;
+  } 
+
+

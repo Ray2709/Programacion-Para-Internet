@@ -22,9 +22,9 @@
                     <a style="margin-left: 4vh;" href="tel:+523311929289"><i class="fa-solid fa-phone"></i>  &nbsp;+52 33 1192 9289</a>
                 </div>
                 <div class="column4 al-r">
-                    <a style="margin-right: 2vh;" href="javascript:void(0)"><i style="font-size: 19px; " class="fa-brands fa-facebook"></i></a>
-                    <a style="margin-right: 2vh;" href="javascript:void(0)"><i style="font-size: 19px; " class="fa-brands fa-instagram"></i></a>
-                    <a style="margin-right: 16vh;" href="javascript:void(0)"><i style="font-size: 19px; " class="fa-brands fa-youtube"></i></a>
+                    <a style="margin-right: 2vh;" href="javascript:void(0)"><i style="font-size: 19px;" class="fa-brands fa-facebook"></i></a>
+                    <a style="margin-right: 2vh;" href="javascript:void(0)"><i style="font-size: 19px;" class="fa-brands fa-instagram"></i></a>
+                    <a style="margin-right: 16vh;" href="javascript:void(0)"><i style="font-size: 19px;" class="fa-brands fa-youtube"></i></a>
                 </div>
             </div> 
         </nav>
@@ -46,8 +46,8 @@
                         <a href="about-us.html">Nosotros</a>
                         <a href="downloads.html">Descargas</a>
                         <a href="documentation.html">Documentación</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i style="font-size: 30px;" class="fa fa-bars"></i>
+                        <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i  style="font-size: 30px; color: #000;" class="fa fa-bars"></i>
                         </a>
                     </ul>
                 </div>
@@ -55,25 +55,26 @@
         </nav>
     </header>
     <div class="masthead">
-        <div class="masthead1">
+        <img id="imagenPrincipal" style="width: 100%; image-rendering: -webkit-optimize-contrast;" src="assets/img/background.png">
+        <!--<div style="position: absolute; top: 15px; left: 320px;" class="masthead1">
             <div class="titulo">
-                <h1 class="textPrincipal2">FireWork C
-                    <font class="textTerciario">S</font>
-                    <font class="textSecundario">S</font></h1>
+                <h1 class="textPrincipal2">FireWork C<font class="textTerciario">S</font><font class="textSecundario">S</font></h1>
             </div>
-        </div>
-        <h3 class="subtitulo animacionTyping">El framework <font class="textSecundario subtitulo1"> sencillo.</font>
+        </div>-->
+        <h3 style="position: absolute; top: 280px; left: 400px;" class="subtitulo animacionTyping">El framework <font class="textSecundario subtitulo1"> sencillo.</font>
         </h3>
-        <h4 class="subtitulo2 animacionTyping"><font class="textSecundario subtitulo1"> Construya sitios completos de una manera nunca antes vista</font>
+        <h4 style="position: absolute; top: 370px; left: 400px; " class="subtitulo2 animacionTyping"><font class="textSecundario subtitulo1"> Construya sitios completos de una <br>manera nunca antes vista</font>
         </h4>
+        
+        <!--<button style="position: absolute; top: 480px; left: 400px; " class="button-33">Descargar</button>-->
     </div>
     <section style="padding: 0;">
         <h1 class="subtitulo">Componentes</h1>
     </section>
-    <label id="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+        <label id="switch">
+            <input type="checkbox">
+            <span class="slider round"><i style="color:#fff;margin-left: 15%;margin-top: 15%; color: var(--principal);" class="fa-solid fa-sun"></i><i style="color:#fff;margin-left: 18%;margin-top: 15%;" class="fa-solid fa-moon"></i></span>
+        </label>
     <main style="padding-top: 0;">
        <!-- <aside>
             <h2>Sidebar</h2>
@@ -97,7 +98,7 @@
                           similar a los elementos posicionados en CSS.</p>
                 </article>
             </section>
-            <img src="assets/img/Grid.png" alt="">
+            <img style="max-width: 100%;" src="assets/img/Grid.png" alt="">
             <section class="dos">
                 <h2>Botones</h2>
                 <article>
