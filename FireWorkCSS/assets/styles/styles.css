@@ -69,6 +69,9 @@ a{
   h1.textPrincipal{
   	font-size: 45px !important;
   }
+  h1.textPrincipal2{
+  	font-size: 45px !important;
+  }
   #text2{
   	width: 56.25% !important;
   }
@@ -132,6 +135,9 @@ a{
 }
 .textPrincipal{
 	color: var(--principal);
+}
+.textPrincipal2{
+	color: #FFFFFF;
 }
 
 .textSecundario{
