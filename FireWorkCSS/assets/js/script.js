@@ -41,7 +41,7 @@ function cambiaTema(ev){
     } else {
         document.documentElement.setAttribute('tema', 'dark');
         $("#imagenPrincipal").attr("src","assets/img/background.png");
-        $("#imagen-il-2").attr("src","assets/img/5278.jpg");
+        $("#imagen-il-2").attr("src","assets/img/5278.png");
     }
 }
 colorSwitch.addEventListener('change', cambiaTema);
