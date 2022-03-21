@@ -42,7 +42,20 @@ a{
     display: block;
   }
 
+  .breadcum{
+  	display: none;
+  }
 
+  .teammate{
+  	width: 90% !important;
+  	margin-left:5vh !important;
+  }
+  .NS img{
+  	width: 100% !important;
+  }
+  div.team-members-list.column16{
+  	margin-bottom: 0 !important;
+  }
   #switch input { 
     opacity: 0;
     width: 0;
@@ -870,3 +883,6 @@ z-index: 99999;
   } 
 
 
+.icon i{
+	color: var(--principal);
+}

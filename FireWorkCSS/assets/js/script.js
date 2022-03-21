@@ -5,8 +5,12 @@ var num = 50;
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
         $('.menu').addClass('fixed');
+        $('.breadcum').css("margin-top","100px");
+        $('.masthead').css("margin-top","100px");
     } else {
         $('.menu').removeClass('fixed');
+        $('.breadcum').css("margin-top","0px");
+        $('.masthead').css("margin-top","0px");
     }
 });
 
