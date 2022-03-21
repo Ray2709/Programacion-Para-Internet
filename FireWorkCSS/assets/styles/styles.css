@@ -902,7 +902,8 @@ z-index: 99999;
 .content-card {
 	border: 3px solid var(--terciario);
   overflow: visible;
-  height: 350px;
+  height: fit-content;
+  min-height: 450px;
   text-align: center;
   padding: 45px; 
   padding: 2vw;
