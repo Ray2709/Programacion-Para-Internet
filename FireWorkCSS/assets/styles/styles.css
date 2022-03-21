@@ -266,14 +266,12 @@ footer a:hover{
 .subtitulo{
 	font-family: "Comfortaa";
 	font-size: 300%;
-	width: 100%;
 	color: var(--letra);
 }
 
 .subtitulo2{
 	font-family: "Comfortaa";
 	font-size: 200%;
-	width: 100%;
 	color: var(--letra);
 }
 .animacionTyping{
