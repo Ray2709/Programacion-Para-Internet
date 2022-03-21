@@ -66,7 +66,7 @@
     <main style="padding-top: 0">
         <div class="container">
             <div style="padding: 0">
-                <h4 id="txtEqDes">¿Quienes somos?</h4>
+                <h4 id="txtEqDes"><i style="font-size: 2rem;" class="fa-solid fa-angles-right"></i> ¿Quienes somos? <i style="font-size: 2rem;" class="fa-solid fa-angles-left"></i></h4>
             </div>
             <section class="uno">
                 <h2>Nosotros somos...</h2>
@@ -92,7 +92,7 @@
         </div>
     </main>
 <div style="margin-bottom: 850px;" >
-    <h4 id="txtEqDes">Equipo de Desarrollo</h4>
+    <h4 id="txtEqDes"><i style="font-size: 2rem;" class="fa-solid fa-angles-right"></i> Equipo de Desarrollo <i style="font-size: 2rem;" class="fa-solid fa-angles-left"></i> </h4>
         <div  style="padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;">
             <div style="margin-bottom:30px; text-align:center;" class="team-members-list column16">
                 
@@ -186,7 +186,37 @@
             </div>
     </div>
 </div>
-<main></main>
+    <div class="container" style="margin-top: 102vh; margin-left: 22vh;">
+        <div style="padding: 0">
+            <h4 id="txtEqDes"><i style="font-size: 2rem;" class="fa-solid fa-angles-right"></i> Contáctanos <i style="font-size: 2rem;" class="fa-solid fa-angles-left"></i></h4>
+        </div>
+        <section class="uno">
+            <form class="contact100-form validate-form">
+            
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+            <span class="label-input100">Nombre(s)</span>
+            <input class="input100" type="text" name="name" placeholder="Escribe aquí tu nombre...">
+            <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <span class="label-input100">Correo Electrónico</span>
+            <input class="input100" type="text" name="email" placeholder="Escribe aquí tu correo electrónico...">
+            <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Message is required">
+            <span class="label-input100">Mensaje</span>
+            <textarea class="input100" name="message" placeholder="Escribe aquí tu mensaje..."></textarea>
+            <span class="focus-input100"></span>
+            </div>
+            </form>
+        </section>
+        <button class="contact100-form-btn" onclick="alertae('Aún no contamos con esta función. ¡Envíanos un correo electrónico!')">
+            <span>
+            Enviar
+            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+            </span>
+            </button>
+    </div>
 <section>
 <div class="NS" style="display: none;">
     <h4 class="subtitulo" style="padding: 0; color: #FA961C;">Un producto de:</h4>
@@ -222,7 +252,9 @@
         <p><a href="downloads.html">Descargas</a></p>
         <p><a href="documentation.html">Documentación</a></p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="assets/js/sweetalert2.all.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/funciones.js"></script>
 </body>
 </html>

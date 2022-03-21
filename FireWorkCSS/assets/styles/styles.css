@@ -224,9 +224,9 @@ article p{
 	padding: 20px;
 	text-align: left;
 }
-.container section:hover{
-    box-shadow: 0 7px 15px;
-    background-color: var(--terciario);
+.container section{
+    border-top: 3px solid var(--terciario);
+    border-bottom: 3px solid var(--terciario);
 }
 footer{
 	color: #fff;
@@ -698,7 +698,6 @@ z-index: 99999;
 	color: rgba(0, 0, 0, 0.85);
 	cursor: pointer;
 	display: inline-flex;
-	font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	justify-content: center;
@@ -740,7 +739,6 @@ z-index: 99999;
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -765,7 +763,6 @@ z-index: 99999;
   color: #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: Clarkson,Helvetica,sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -859,7 +856,6 @@ z-index: 99999;
 	left: 20px;
 	font-size: 1em;
 	transition: 0.6s;
-	font-family: sans-serif;
   }
   .center .inputbox input:focus ~ span,
   .center .inputbox input:valid ~ span {
@@ -889,7 +885,10 @@ z-index: 99999;
 .card {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  padding-left: 9%;
+  padding-right: 9%;
+  margin-bottom: 5%;
+
 }
 
 
@@ -899,9 +898,9 @@ z-index: 99999;
 
 
 .content-card {
-  box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
+	border: 3px solid var(--terciario);
   overflow: visible;
-  height: 550px;
+  height: 350px;
   text-align: center;
   padding: 45px; 
   padding: 2vw;
@@ -930,3 +929,242 @@ z-index: 99999;
   color: var(--color3);
   font-size: 20pt;
 }
+
+
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.contact100-map {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wrap-contact100 {
+  width: 1170px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 82px 180px 33px 180px;
+  position: relative;
+  display: none;
+}
+
+.show-wrap-contact100 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2.5vh;
+}
+
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 44px;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 13px;
+  margin-bottom: 2.5vh;
+}
+
+.rs1-wrap-input100 {
+  width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+  
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.input100 {
+	border: 0;
+  display: block;
+  width: 100%;
+  background: transparent;
+  
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: var(--principal);
+}
+
+.input100:focus-visible {
+ 	border: 0 !important;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+/*---------------------------------------------*/
+input.input100 {
+	font-family: 'Comfortaa';
+  height: 40px;
+}
+
+
+textarea.input100 {
+	font-family: 'Comfortaa';
+  min-height: 110px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+  border: 0;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+   border: 0;
+
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+	font-family: 'Comfortaa';
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -25px;
+}
+
+.contact100-form-btn {
+	cursor: pointer;
+	font-family: 'Comfortaa';
+	border: 0;
+	margin-left: 1em;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: var(--principal);
+  border-radius: 25px;
+
+  
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+}
+
+.contact100-form-btn i {
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+
+  background-color: #333333;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+
+.contact100-form-btn:hover i {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+

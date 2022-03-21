@@ -37,9 +37,11 @@ function cambiaTema(ev){
     if(ev.target.checked){
         document.documentElement.setAttribute('tema', 'light');
         $("#imagenPrincipal").attr("src","assets/img/backgrounddark.png");
+        $("#imagen-il-2").attr("src","assets/img/5278black.png");
     } else {
         document.documentElement.setAttribute('tema', 'dark');
         $("#imagenPrincipal").attr("src","assets/img/background.png");
+        $("#imagen-il-2").attr("src","assets/img/5278.jpg");
     }
 }
 colorSwitch.addEventListener('change', cambiaTema);
